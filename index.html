@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>K19 - P.204</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- tailwindcss -->
+
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/9b8e4b3470.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- icon -->
+
+        <link rel="stylesheet" href="./statics/css/index.css" />
+
+        <link rel="shortcut icon" href="https://png.pngtree.com/png-clipart/20221221/original/pngtree-japan-flag-stylized-on-white-transparent-background-png-image_8792345.png" type="image/x-icon">
+    </head>
+    <body>
+        <div id="title">
+            <p>Phòng 204</p>
+        </div>
+        <div id="statistics">
+            <div class="statistics__item present" trung="-1">
+                <div class="statistics__item--title">
+                    <p>Tổng quỹ hiện tại</p>
+                </div>
+                <div class="statistics__item--view">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="statistics__item total">
+                <div class="statistics__item--title">
+                    <p>Tổng quỹ đã đóng</p>
+                </div>
+                <div class="statistics__item--view">
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+        <div id="listEvents">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <i class="uil uil-list-ui-alt"></i>
+                        </th>
+                        <th>
+                            <p>Nội dung</p>
+                        </th>
+                        <th>
+                            <p>Chi</p>
+                        </th>
+                        <th>
+                            <i class="uil uil-calendar-alt"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="AddEvent" >
+            <div class="btnCloseAddEvent"></div>
+            <div class="title">
+                <p>Thêm nội dung</p>
+            </div>
+            <div class="form">
+                <div class="form_input content">
+                    <label for="inputNoiDung">Nội dung</label>
+                    <input type="text" id="inputNoiDung" placeholder="Nhập nội dung" required>
+                </div>
+                <div class="form_input price">
+                    <label for="inputPrice">Số tiền</label>
+                    <input type="text" id="inputPrice" placeholder="Nhập số tiền" required>
+                </div>
+                <div class="form_input thuChi">
+                    <label for="thuChi">Thu / Chi</label>
+                    <select name="" id="inputThuChi">
+                        <option value="chi">Chi</option>
+                        <option value="thu">Thu</option>
+                    </select>
+                </div>
+                <div class="form_input date">
+                    <label for="date">Chọn ngày </label>
+                    <p>(Không chọn sẽ lấy ngày hôm nay)</p>
+                    <input type="date" name="" id="inputDate">
+                </div>
+                <div class="form_input--submit">
+                    <input type="submit" value="Thêm"></input>
+                </div>
+            </div>
+        </div>
+        <a id="backtop" href="#"></a>
+        <script src="./statics/js/index.js" ></script>
+        <script src="../server/index.js"></script>
+    </body>
+</html>
